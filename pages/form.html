@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CadyKD Registration</title>
+	<title>CadyKD Form</title>
 	<script defer src="../js/validation.js"></script>
 	<link rel="stylesheet" href="../css/main.css">
 </head>
@@ -12,15 +12,16 @@
 </div>
 
 <header>
+	<img src="../images/CadyKD_Logo.png" alt="CadyKD Logo" id="cadykd-logo">
 	<nav class="navbar">
 		<ul>
 			<li><a href="../index.html">HOME</a></li>
-			<li class="selected-link"><a href="pages/register.html">REGISTER</a></li>
+			<li class="selected-link"><a href="#">FORM</a></li>
 		</ul>
 	</nav>
 </header>
-<form id="register-form" onsubmit="return false">
-	<h1>Register</h1>
+<form id="form" onsubmit="return false">
+	<h1>Form</h1>
 	
 	<label for="email"><b>Email</b></label>
 	<input type="email" placeholder="Enter Email" name="email" id="email" required>
@@ -39,5 +40,8 @@
 		<p>Already have an account? <a href="#">Sign in</a></p>
 	</div>
 </form>
+
+<div id="backgroundImageAttribution">Background Image from NASA Image Library</div>
+
 </body>
 </html>
