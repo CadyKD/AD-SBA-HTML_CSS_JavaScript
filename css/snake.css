@@ -1,0 +1,25 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+#snake-board {
+	background-color: #000000;
+	width: 75vmin;
+	height: 75vmin;
+	display: grid;
+	grid-template-rows: repeat(21, 1fr);
+	grid-template-columns: repeat(21, 1fr);
+}
+
+.snake{
+	background-color: #0000FF;
+	border: .25vmin solid #FFFFFF;
+}
+
+.food {
+	background-color: #FF0000;
+	border: .25vmin solid #FFFFFF;
+}
