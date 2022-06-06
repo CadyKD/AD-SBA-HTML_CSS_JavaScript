@@ -1,8 +1,14 @@
 # AD-SBA-HTML_CSS_JavaScript
 
-Welcome to CadyKD, a website built for a PerScholas assessment.
+Welcome to CadyKD, a website built for a PerScholas skills assessment.
 
 The website is just a basic multi-page site about random stuff.
+* I followed a tutorial and wrote a snake game in javascript, then modified it to work better
+* I added a second snake game that I found the code for, just to use as a comparison
+  * Then a made gifs of each for the game selection page
+* I re-worked the number guessing game into one that works using input fields
+* I created a simple form that posts to a DIV on the page
+  * You can select an image to go with it
 
 ## Technical requirements:
 ### HTML
