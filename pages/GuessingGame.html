@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CadyKD - Guessing Game</title>
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="banner">
+
+</div>
+
+<header>
+	<img src="../images/CadyKD_Logo.png" alt="CadyKD Logo" id="cadykd-logo">
+	<nav class="navbar">
+		<ul>
+			<li class="selected-link"><a href="#">HOME</a></li>
+			<li><a href="pages/games.html">GAMES</a></li>
+			<li><a href="pages/form.html">FORM</a></li>
+		</ul>
+	</nav>
+	<nav class="navbar">
+		<ul>
+			<li><a href="snake1.html">Snake 1</a></li>
+			<li><a href="snake2.html">Snake 2</a></li>
+			<li class="selected-link"><a href="#">Guessing Game</a></li>
+		</ul>
+	</nav>
+</header>
+<div class="flex-box">
+	<div class="textbox">
+		<h1>Guess The Number!</h1>
+		<p>Give me a range of numbers and I will pick a random number in that range.<br>
+		Then you can guess the number, and I will tell you if you are high or low.<br>
+		You only get so many guesses!<br>
+		(Hint, number of guesses is calculated based on the range given)</p>
+		<br>
+		<h2>Set Up the Game</h2>
+		<div class="guessbox">Minimum Number: <input type="number" id="lowEnd" value="1"></div>
+		<div class="guessbox">Maximum Number: <input type="number" id="highEnd" value="100"></div>
+		<!-- <div class="guessbox">Number of Guesses allowed: <input type="number" id="numberGuesses" value="10"></div> -->
+		<div class="guessbox"><button onclick="setupGame()" id="setupSettings">Set Up</button></div>
+		<br>
+
+		<h2>Play the Game</h2>
+		<div class="guessbox">Your Guess: <input type="number" id="userGuess"></div>
+		<div class="guessbox"><button onclick="guessingGame()" id="submitGuess">Check Guess</button></div>
+		<br>
+		<p id="textbox1"></p>
+		<p id="textbox2">Guesses Remaining: 0/0</p>
+		<p id="textbox3"></p>
+		
+		</div>
+		<script src="../js/GuessingGame.js"></script>
+	
+	</div>
+	
+	<div id="backgroundImageAttribution">Background Image from NASA Image Library</div>
+	
+	</body>
+	</html>

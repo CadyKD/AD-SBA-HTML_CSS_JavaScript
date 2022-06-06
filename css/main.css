@@ -1,74 +1,75 @@
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding:0;
-  border: none;
-  text-decoration: none;
-  list-style: none;
-  color: #FFFFFF;
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+	border: none;
+	text-decoration: none;
+	list-style: none;
+	color: #FFFFFF;
 }
 
 body {
-  display: flex;
-  background-color: #000000;
-  flex-direction: column;
-  width:100vw;
-  height:100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: #000000;
+	width:100vw;
+	height:100vh;
 }
 
 .banner {
-  z-index: -1;
-  pointer-events: none;
-  position: fixed;
-  background-image:  url("https://images-assets.nasa.gov/image/iss050e066094/iss050e066094~medium.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-  opacity: 0.4;
+	z-index: -1;
+	pointer-events: none;
+	position: fixed;
+	background-image:  url("https://images-assets.nasa.gov/image/iss050e066094/iss050e066094~medium.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.4;
 }
 
 .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width:100%;
-  height:6rem;
-  padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	height: 6rem;
+	padding: 2px;
 }
 
 .navbar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 50%;
-  margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	height: 3rem;
 }
 
 .navbar ul li a {
-  color: #000000;
+	color: #000000;
 }
 
 li {
-  padding:10px;
-  border: 1px solid #FFFFFF;
-  background-color: #606060;
+	padding:10px;
+	border: 1px solid #FFFFFF;
+	background-color: #606060;
 }
 
 li:hover {
-  animation: 1s hovered forwards;
+	animation: 1s hovered forwards;
 }
 
 .selected-link {
-  text-decoration: underline;
-  background-color: #E0E0E0;
-  border-radius: 10px;
+	text-decoration: underline;
+	background-color: #E0E0E0;
+	border-radius: 10px;
 }
 
 @keyframes hovered {
-  100% {
-    border: 2px solid #FF0000;
-  }
+	100% {
+		border: 2px solid #FF0000;
+	}
 }
 
 #cadykd-logo {
@@ -78,17 +79,99 @@ li:hover {
 	width: 50%;
 }
 
+#cadykd-logo-mini {
+	align-self: center;
+	height: 6rem;
+}
+
 #backgroundImageAttribution {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-    border-radius: 8px;
-    bottom: 16px;
-    color: #FFFFFF;
-    line-height: 20px;
-    max-width: 50vw;
-    padding: 8px;
-    position: fixed;
-    text-shadow: var(--ntp-theme-text-shadow);
-    z-index: -1;
+	border-radius: 8px;
+	bottom: 16px;
+	color: #FFFFFF;
+	line-height: 20px;
+	max-width: 50vw;
+	padding: 8px;
+	text-shadow: var(--ntp-theme-text-shadow);
+	z-index: -1;
+}
+
+#game-grid-container {
+	flex:6;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	overflow-y: auto;
+	width: 100%;
+}
+
+.game-list-item {
+	background-color: #606060;
+	display: flex;
+	flex-direction: column;
+	width:15rem;
+	height:15rem;
+	border-radius: 10px;
+	padding: 5px;
+	margin:20px;
+	box-shadow: 5px 7px 5px #80808050;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.game-list-item .game-container {
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-list-item .img-container {
+	flex:2;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width:100px;
+	height: 100px;
+}
+
+.game-list-item .img-container img {
+	max-height: 100%;
+}
+
+.flex-box {
+	display: flex;
+	justify-content: center;
+}
+
+.textbox {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 50%;
+}
+
+.guessbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	width: 50%;
+	margin-top: 2px;
+}
+
+input[type=number] {
+	width: 100px;
+	color: black;
+	margin-left: 5px;
+	height: 1.2rem;
+}
+
+button {
+	width: 90px;
+	color: black;
+	justify-content: center;
+	margin-top: 2px;
 }
