@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CadyKD Form</title>
-	<script defer src="../js/validation.js"></script>
+	<script defer src="../js/form.js"></script>
 	<link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -23,26 +23,27 @@
 		</ul>
 	</nav>
 </header>
-<form id="form" onsubmit="return false">
-	<h1>Basic Form</h1>
-	
-	<label for="email"><b>Email</b></label>
-	<input type="email" placeholder="Enter Email" name="email" id="email" required>
-	
-	<label for="psw"><b>Password</b></label>
-	<input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-	
-	<label for="psw-repeat"><b>Repeat Password</b></label>
-	<input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-	<br>
-	
-	<button type="submit" class="registerbtn">Register</button>
-	<br>
-	<p id="form-error"></p>
-	<div id="signin-container">
-		<p>Already have an account? <a href="#">Sign in</a></p>
-	</div>
-</form>
+<div class="flex-box">
+	<form id="form" onsubmit="return false">
+		<h1>Basic Form</h1>
+		
+		<label for="Name"><b>Name</b></label>
+		<input type="name" placeholder="Enter Your Name" name="name" id="name" required>
+		Select Emoji:
+		<select name="emoji" id="emojipicker">
+			<option value="smile" style="color: #000000;">Smile</option>
+			<option value="goofy" style="color: #000000;">Goofy</option>
+			<option value="sad" style="color: #000000;">Sad</option>
+		</select>
+		<button type="submit" id="submit-btn">Submit</button>
+	</form>
+</div>
+<br>
+<br>
+<br>
+<div class="flex-box">
+	<div id="form-output"></div>
+</div>
 
 <div id="backgroundImageAttribution">Background Image from NASA Image Library</div>
 
